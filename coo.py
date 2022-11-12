@@ -15,7 +15,7 @@ epic_store_url = "https://www.epicgames.com/store/en-US"
 epic_login_url = "https://www.epicgames.com/id/login/epic"
 epic_logout_url = "https://www.epicgames.com/id/logout"
 
-
+print(os.environ.get('GECKO_PATH'))
 if (os.environ.get('GECKO_PATH')):
     driver = webdriver.Firefox(executable_path = os.getenv('GECKO_PATH'))
 else:
